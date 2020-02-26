@@ -2,10 +2,6 @@
 - hosts: webservers
   become: true
   tasks:
-   // - name: install java
-     // apt:
-       // name:  java
-        state: latest
     - name: download tomcat package
       get_url:
         url: http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.51/bin/apache-tomcat-8.5.51.tar.gz
