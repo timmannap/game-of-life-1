@@ -3,7 +3,7 @@
   become: true
   tasks:
     - name: install java
-      yum:
+      apt:
         name:  java
         state: latest
     - name: download tomcat package
