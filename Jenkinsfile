@@ -54,11 +54,11 @@ stages {
         }
     }
 }
-     //stage('Artifact upload') {
-      //steps {
-       //nexusPublisher nexusInstanceId: '1234', nexusRepositoryId: 'releases', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'gameoflife-web/target/gameoflife.war']], mavenCoordinate: [artifactId: 'gameoflife', groupId: 'com.wakaleo.gameoflife', packaging: 'war', version: '$BUILD_NUMBER']]]
-      //}
-     //}
+     stage('Artifact upload') {
+      steps {
+       nexusPublisher nexusInstanceId: '1234', nexusRepositoryId: 'releases', packages: [[$class: 'MavenPackage', mavenAssetList: [], mavenCoordinate: [artifactId: 'gameoflife', groupId: 'com.wakaleo.gameoflife', packaging: 'war', version: '$BUILD_ID']]]
+      }
+     }
     //stage('Deploy War') {
       //steps {
         //sh label: '', script: 'ansible-playbook deploy.yml'
