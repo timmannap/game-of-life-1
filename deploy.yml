@@ -2,9 +2,9 @@
 - hosts: webservers
   become: true
   tasks:
-    - name: install java
-      apt:
-        name:  java
+   // - name: install java
+     // apt:
+       // name:  java
         state: latest
     - name: download tomcat package
       get_url:
