@@ -56,7 +56,7 @@ stages {
 }
      stage('Artifact upload') {
       steps {
-       nexusPublisher nexusInstanceId: '1234', nexusRepositoryId: 'phanindra', packages: [[$class: 'MavenPackage', mavenAssetList: [], mavenCoordinate: [artifactId: 'gameoflife', groupId: 'com.wakaleo.gameoflife', packaging: 'war', version: '$BUILD_ID']]]
+       nexusArtifactUploader credentialsId: '5ba1df6b-2282-402a-9887-e07858823ceb', groupId: 'phanindra', nexusUrl: 'http://3.133.58.28:8081/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'phanindra', version: '$BUILD_ID'
       }
      }
     stage('Deploy War') {
