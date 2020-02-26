@@ -64,7 +64,7 @@ stages {
         //sh label: '', script: 'ansible-playbook deploy.yml'
       //}
  //}
-}
+//}
 //post {
   //     success {
     //        archiveArtifacts 'gameoflife-web/target/*.war'
