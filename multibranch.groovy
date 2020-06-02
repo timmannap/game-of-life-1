@@ -4,7 +4,7 @@ pipeline {
 
     tools {
         
-        maven "Maven363"
+        maven "Maven"
     }
 
     environment {
