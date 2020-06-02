@@ -4,7 +4,7 @@ pipeline {
 
     tools {
         
-        maven "Maven"
+        maven "maven"
     }
 
     environment {
