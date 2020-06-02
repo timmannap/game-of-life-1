@@ -14,7 +14,7 @@ pipeline {
         // This can be http or https
         NEXUS_PROTOCOL = "http"
         // Where your Nexus is running. 'nexus-3' is defined in the docker-compose file
-        NEXUS_URL = "13.233.251.180:8081/"
+        NEXUS_URL = "35.154.202.168:8081"
         // Jenkins credential id to authenticate to Nexus OSS
         NEXUS_CREDENTIAL_ID = "NEXUS_CREDENTIALS"
     }
