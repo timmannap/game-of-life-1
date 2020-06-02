@@ -94,7 +94,7 @@ pipeline {
                 script {
                     // If you are using Windows then you should use "bat" step
                     // Since unit testing is out of the scope we skip them
-                  sh "ansible-playbook -e env=${NEXUS_REPOSITORY} deploy.yaml"
+                  sh "ansible-playbook -e env=${NEXUS_REPOSITORY} deploy1.yaml"
                 }
             }
         }
