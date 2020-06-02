@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: copy file
+    copy: 
+      src: target/*.war
+      dest: /opt/{{env}}/webapps/
